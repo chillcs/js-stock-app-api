@@ -8,6 +8,7 @@ function searchData(e) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
+			//
 			var response = JSON.parse(xhttp.responseText);
 			var stockData = response;
 			console.log(stockData);
